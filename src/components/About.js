@@ -1,9 +1,9 @@
-export default function About(props){
-    console.log(props)
+export default function About({about, image="https://via.placeholder.com/215",}){
+
     return(
         <aside>
-            <img src={props.image} alt="blog logo" />
-            <p>{props.about}</p>
+            <img src={image} alt="blog logo"  />
+            <p>{about}</p>
         </aside>
     )
 }
